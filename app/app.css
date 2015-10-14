@@ -1,4 +1,27 @@
-/* app css stylesheet */
+.cashew-nav {
+  background-color: #EEE;
+  /*border-bottom: solid 1px #EFEFEF;*/
+}
+.cashew-brand {
+  margin-left: 10px;
+  background-color: #9DE352; /* #A5E85D; */
+  color: white;
+  text-shadow: 1px 1px #6BCF00;
+  font-size: 14pt;
+  font-family: 'Capriola', sans-serif;
+  text-transform: none;
+}
+.cashew-brand:hover {
+  background-color: #A5E85D;
+}
+.cashew-nav li {
+  line-height: 18pt;
+  margin-left: 1px;
+}
+.cashew-nav-link:hover {
+  background-color: #F8F8F8;
+}
+
 .lineItems {
   list-style-type: none;
   padding:0;
@@ -22,6 +45,12 @@
 }
 .lineItem > .plus {
   color: green;
+}
+.lineItem .showOnHover {
+  visibility: hidden;
+}
+.lineItem:hover .showOnHover {
+  visibility: visible;
 }
 fieldset.dates {
   display: inline-block;
