@@ -10,7 +10,10 @@
     "module": false,
     "inject": false,
     "console": false,
-    "require": false
+    "require": false,
+    "exports": false,
+    "process": false,
+    "emit": false
   },
   "eqeqeq": true,
   "curly": true,

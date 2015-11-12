@@ -23,22 +23,23 @@
   <![endif]-->
 
   <div class="pure-menu pure-menu-horizontal cashew-nav">
-    <ul class="pure-menu-list"><li class="pure-menu-item"><a href="#/" class="pure-menu-heading pure-menu-link cashew-brand">cashew</a></li><li class="pure-menu-item"><a href="#/line-items" class="pure-menu-link cashew-nav-link">Payables &amp; Receivables</a></li><li class="pure-menu-item"><a href="#/view2" class="pure-menu-link cashew-nav-link">History</a></li><li class="pure-menu-item"><a href="#/settings" class="pure-menu-link cashew-nav-link">Settings</a></li></ul>
+    <ul class="pure-menu-list"><li class="pure-menu-item"><a href="#/" class="pure-menu-heading pure-menu-link cashew-brand">cashew</a></li><li class="pure-menu-item"><a href="#/line-items" class="pure-menu-link cashew-nav-link">Plan</a></li><li class="pure-menu-item"><a href="#/view2" class="pure-menu-link cashew-nav-link">Payment History</a></li><li class="pure-menu-item"><a href="#/settings" class="pure-menu-link cashew-nav-link">Settings</a></li></ul>
+    <span app-version></span>
   </div>
 
   <div ng-view></div>
-
-  <span app-version></span>
   
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
   <script src="views/Dashboard/Dashboard.js"></script>
   <script src="views/LineItemAdder/LineItemAdder.js"></script>
-  <script src="views/LineItemLister/LineItemLister.js"></script>
-  <script src="app.js"></script>
+  <script src="views/Planner/Planner.js"></script>
+  <script src="services/PayablesService.js"></script>
+  <script src="services/LineItemsService.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
