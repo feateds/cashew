@@ -9,7 +9,7 @@
   font-family: 'Capriola', sans-serif;
   text-transform: none;
 }
-.cashew-brand:hover {
+.cashew-brand:hover, .cashew-brand:focus {
   background-color: #A5E85D;
 }
 .cashew-nav li {
@@ -27,6 +27,13 @@ h2.section-header {
   padding: 10px;
   border-bottom: solid 1px #DEDEDE;
   background-color: #f5f5f5;
+}
+.metric-module {
+  padding: 10px;
+}
+.button-warning {
+  background: rgb(255, 52, 52);
+  color: white;
 }
 .lineItem {
   padding: 10px;
@@ -74,17 +81,6 @@ div.field .tip {
   float: right;
   color: #999;
 }
-/*
-div.field > span.error {
-  display: block;
-  margin-top: 3px;
-  border-radius: 5px;
-  border: solid 2px #EE514C;
-  font: normal 10pt sans-serif;
-  color: #EE514C;
-  padding: 5px;
-}
-*/
 div.dates {
   padding-top: 0;
   vertical-align: top;
@@ -196,4 +192,38 @@ div.no-bg-color {
   background-color: #4DC9FF;
   border-radius: 5px;
   padding: 3px;
+}
+/* Planner view */
+#amount-graph {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+#amount-graph .graph-part {
+  height: 8px;
+  display: inline-block;
+  line-height: 0;
+  /*border-top: solid 1px #777;
+  border-bottom: solid 1px #777;*/
+}
+#amount-graph div:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  /*border-left: solid 1px #777;*/
+}
+#amount-graph div:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  /*border-right: solid 1px #777;*/
+}
+.legend {
+  display:inline-block;
+  margin-right: 15px;
+}
+.legend .legend-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
 }
